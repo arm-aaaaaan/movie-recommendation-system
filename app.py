@@ -54,6 +54,15 @@ def recommend(movie):
 st.set_page_config(layout="wide")
 st.header('🎬 Movie Recommender System Using Machine Learning')
 
+
+
+# Download similarity file if not present
+url = "https://huggingface.co/datasets/arm-aaaaaan/movie-recommender-model/resolve/main/similarity.pkl"
+
+if not os.path.exists("similarity.pkl"):
+    r = requests.get(url)
+    with open("similarity.pkl", "wb") as f:
+        f.write(r.content)
 # ---------------- LOAD FILES ----------------
 try:
     movies = pickle.load(open('movie_list.pkl','rb'))
