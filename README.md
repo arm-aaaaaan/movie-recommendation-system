@@ -2,6 +2,9 @@
 
 A content-based movie recommender system built using Machine Learning and Streamlit.
 
+## Live Demo
+https://movie-recommendation-system-gn642sqmrne23rdfivdvyx.streamlit.app
+
 ## Features
 - Recommends 5 similar movies
 - Fetches movie posters using TMDB API
