@@ -56,7 +56,7 @@ st.header('🎬 Movie Recommender System Using Machine Learning')
 
 # ---------------- LOAD FILES ----------------
 try:
-    movies = pickle.load(open('movie_list.pkl', 'rb'))
+    movies = pickle.load(open('movie_list.pkl','rb'))
     similarity = pickle.load(open('similarity.pkl', 'rb'))
 except FileNotFoundError:
     st.error("Model files not found. Please ensure pkl files are available.")
